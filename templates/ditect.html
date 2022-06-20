@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>DITECT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+   
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    .registerbtn {
+    background-color: #57d457;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.9;
+    border-radius: 8px;
+    }
+
+    .registerbtn:hover {
+    opacity:1;
+    }
+    p{
+        color: rgb(20, 20, 20);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    input[type=submit]:hover {
+    background-color: #17cce4;
+    }
+    .center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    }
+
+    </style>
+    </head>
+    <body>
+    
+    
+    <h1> <p style="text-align:center;">Prediksi Diabetes</p></h1>
+    <form action="/predict"method="post">
+    <!-- <input type="text" name="Pregnancies" placeholder="Pregnancies" required="required" /> -->
+    <p><b>Level Glukosa</b></p>
+    <input type="text" name="Glucose Level" placeholder="1 - 10" required="required" />
+    <!-- <input type="text" name="Blood Pressure" placeholder="Blood Pressure" required="required" />
+    <input type="text" name="Skin Thickness" placeholder="Skin Thickness" required="required" /> -->
+    <p><b>Insulin</b></p>
+    <input type="text" name="Insulin" placeholder="1 - 10" required="required" />
+    <p><b>BMI</b></p>
+    <input type="text" name="BMI" placeholder="1 - 10" required="required" />
+    <p><b>Diabetes PF</b></p>
+    <input type="text" name="Diabetes PF" placeholder="1 - 10" required="required" />
+    <p><b>Umur</b></p>
+    <input type="text" name="Age" placeholder="1 - 10" required="required" />
+    <button type="submit" class="registerbtn">Prediksi</button>
+
+    </form>
+    </div>
+
+    </body>
+</html>
+  

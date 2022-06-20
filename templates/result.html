@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DITECT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+}
+.ResultBtnOne{
+  background-color: #e64e4e;
+  border: none;
+  color: rgb(235, 233, 233);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+.ResultBtnOne{
+  background-color: #67db63;
+  border: none;
+  color: rgb(235, 233, 233);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+
+
+
+</style>
+</head>
+  <body>
+
+  
+    <h1>Hasil: </h1>
+    {% if prediction == 1%}
+    <button type="submit" class="ResultBtnOne">Terdeteksi Diabetes</button>
+    <h3 style="color: rgb(5, 5, 5);">Peluang untuk terkena diabetes lebih besar, silahkan konsultasikan ke dokter.</h3>
+    <p class="SubJudul">Berikut Gejalanya:</p>
+    <p class="Konten">
+      <ol>
+        <li>Sering buang air kecil</li>
+        <li>Gampang haus</li>
+        <li>Cepat lapar</li>
+        <li>Berat badan turun drastis</li>
+        <li>Kulit kering</li>
+        <li>Luka yang susah sembuh</li>
+      </ol>
+    </p>
+    {% elif prediction == 0%}
+    <button type="submit" class="ResultBtn">Tidak Terdeteksi Diabetes</button>
+    <h3 style="color: rgb(5, 5, 5);">Diabetes tidak terdekteksi, selalu jaga kesehatan ya.</h3>
+    <p class="SubJudul">Kiat mencegah Diabetes:</p>
+    <p class="Konten">
+      <ol>
+        <li>Menerapkan pola makan sehat</li>
+        <li>Menjalani olahraga secara rutin</li>
+        <li>Menjaga berat badan ideal</li>
+        <li>Mengelola stres dengan baik</li>
+        <li>Melakukan pengecekan gula darah secara rutin</li>
+      </ol>
+    </p>
+    {% endif %}
+
+  </body>
+</html>
